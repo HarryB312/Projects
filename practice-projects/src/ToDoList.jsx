@@ -38,9 +38,13 @@ function ToDoList(){
           type="text" 
           value={newItem}
           onChange={(e) => setNewItem(e.target.value)}
+          onKeyDown={(e)=>{
+            if(e.key === 'Enter')
+              handleAdd();
+          }}
           placeholder="Add Item Here" 
         />
-        <button onClick={handleAdd}>Add</button>
+        <button onClick={handleAdd} >Add</button>
       </div>
       <ul style={{listStyleType: 'none', padding: '0'}}>
         {itemMap}
