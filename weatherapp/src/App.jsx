@@ -1,16 +1,14 @@
-import './App.css'
-import WeatherTitle from "./Weather-Title"
-import Tempature from './Tempature'
-import Location from './Location'
+import './App.css';
+import DisplayContainer from './DisplayContainer';
 
 function App() {
+  // Now, App.jsx can focus on things like fetching data 
+  // and managing the overall application state.
   return (
     <div className="App">
-      <WeatherTitle/>
-      <Tempature />
-      <Location />
+      <DisplayContainer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
