@@ -9,10 +9,8 @@
   margin-top: 0px;
 }
 
-.location{
-  
-}
-
-.locationBTN{
-  
+.displaycontainer{
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 0%;
 }
